@@ -4,8 +4,8 @@ const Portfolio = () => {
   const styles = {
     grid: {
       display: 'grid',
-      gridTemplateColumns: 'repeat(3,150px)',
-      gridTemplateRows: 'repeat(3,150px)',
+      gridTemplateColumns: 'repeat(3,300px)',
+      gridTemplateRows: 'repeat(3,300px)',
       gridgap: '50px 30px',
       justifyContent: 'center',
       alignItems: 'center'
@@ -13,7 +13,7 @@ const Portfolio = () => {
     },
     gridItem: {
       border: 'thin gray solid',
-      padding: '10px',
+      padding: '20px',
     },
     img: {
       width: '100%'

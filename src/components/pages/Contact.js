@@ -3,13 +3,15 @@ import React, { useState } from 'react';
 const Contact = () => {
 
   const styles = {
-    contact: {
+    section: {
       backgroundColor: '#151722',
       color: 'white',
       marginTop: '0px',
       height: '100vh',
-      width: '100vw'
-    }
+      width: '100vw',
+      justifyContent: 'center',
+      textAlign: 'center'
+    },
   }
 
 
@@ -34,15 +36,17 @@ const Contact = () => {
   };
 
   return (
-    <section className ="contact" style={styles.contact}>
+    <section className ="contact" style={styles.section}>
       <h2>Contact</h2>
-      <form onSubmit={handleSubmit}>
+
+      <form className="form" style={styles.form} onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input
             type="text"
             id="name"
             value={name}
+            placeholder="Your name..."
             onChange={(e) => setName(e.target.value)}
           />
         </div>
@@ -52,6 +56,7 @@ const Contact = () => {
             type="email"
             id="email"
             value={email}
+            placeholder="Your email..."
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
@@ -60,6 +65,7 @@ const Contact = () => {
           <textarea
             id="message"
             value={message}
+            placeholder="Your message..."
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>

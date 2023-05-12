@@ -5,7 +5,7 @@ function NavBar({ currentPage, handlePageChange }) {
 
   const styles = {
     navbar: {
-      backgroundColor: '#013220',
+      backgroundColor: '#151722',
       padding: '45px',
       objectFit: 'contain',
       backgroundImage: `url(${HeaderImage})`,
@@ -37,22 +37,11 @@ function NavBar({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           style={styles.title}
-          href="Home"
-          onClick={() => handlePageChange('Home')}
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+          href="#AboutMe"
+          onClick={() => handlePageChange('AboutMe')}
+          className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
         >
           Eugene Calm
-        </a>
-      </li>
-
-      <li className="nav-item" style={styles.listItem} >
-        <a
-          style={styles.fontColor}
-          href="#Home"
-          onClick={() => handlePageChange('Home')}
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
         </a>
       </li>
       <li className="nav-item" style={styles.listItem}>
